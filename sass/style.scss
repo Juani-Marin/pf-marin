@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+$rethink-sans: 'Rethink Sans', sans-serif;
+
+// Paleta de colores
+$color-1: #070F2B;
+$color-2: #201658;
+$color-3: #1D24CA;
+$color-4: #98ABEE;
+$color-5: #1B1A55;
+$color-6: #535C91;
+$color-7: #9290C3;
+
+body {
+    font-family: $rethink-sans;
+    color: black;
+}
+
+.body-a {
+    font-family: $rethink-sans;
+    color: black;
+    background-color: $color-2;
+}
+
+header {
+    font-family: $rethink-sans;
+    background-color: $color-2;
+    color: white;
+}
+
+header a {
+    font-family: $rethink-sans;
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: $rethink-sans;
+    color: white;
+}
+
+main {
+    font-family: $rethink-sans;
+    background-color: $color-1;
+    color: white;
+}
+
+.imagen {
+    
+    width: 350px;
+}
+
+ul {
+    font-family: $rethink-sans;
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    &:hover {
+        color: $color-7;
+        text-decoration: none;
+    }
+}
+
+div, footer, section {
+    font-family: $rethink-sans;
+    color: black;
+}
+
+ol {
+    background-color: $color-7;
+    font-family: $rethink-sans;
+    color: white;
+}
+
+label {
+    color: white;
+    font-family: $rethink-sans;
+    font-size: 1.5rem;
+}
+
+img {
+    width: 500%;
+
+    & + a {
+        width: 80px;
+    }
+}
+
+p {
+    font-family: $rethink-sans;
+    font-size: 2rem;
+}
+
+header img {
+    width: 20%;
+}
+footer img{
+    width: 5%
+}
+
+.flex-container {
+    display: flex;
+    background-color: $color-5;
+    justify-content: flex-end;
+    justify-content: space-around;
+
+}
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .item img {
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.padre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fachada {
+    width: 30%;
+}
+
+.mapa {
+    width: 40%;
+}
+
+
+.dropdown-item {
+    color: black;
+    background-color: white;
+    border-bottom: white;
+}
+
+.dropdown-menu {
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+.fondo-menu {
+    color: white;
+    background-color: $color-2;
+    text-decoration: none;
+    border: none;
+    font-size: 1.8rem;
+
+    &:hover {
+        color: $color-7;
+    }
+}
+.padre {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contenedor {
+    max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+    width: 100%;
+  }
+  
+  .mapa, .fachada {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .mapa, .fachada {
+      width: calc(50% - 10px); /* Ajusta el ancho de los elementos y deja algo de espacio entre ellos */
+    }
+  }

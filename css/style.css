@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap");
+body {
+  font-family: "Rethink Sans", sans-serif;
+  color: black;
+}
+
+.body-a {
+  font-family: "Rethink Sans", sans-serif;
+  color: black;
+  background-color: #201658;
+}
+
+header {
+  font-family: "Rethink Sans", sans-serif;
+  background-color: #201658;
+  color: white;
+}
+
+header a {
+  font-family: "Rethink Sans", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: "Rethink Sans", sans-serif;
+  color: white;
+}
+
+main {
+  font-family: "Rethink Sans", sans-serif;
+  background-color: #070F2B;
+  color: white;
+}
+
+.imagen {
+  width: 350px;
+}
+
+ul {
+  font-family: "Rethink Sans", sans-serif;
+  list-style: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+a:hover {
+  color: #9290C3;
+  text-decoration: none;
+}
+
+div, footer, section {
+  font-family: "Rethink Sans", sans-serif;
+  color: black;
+}
+
+ol {
+  background-color: #9290C3;
+  font-family: "Rethink Sans", sans-serif;
+  color: white;
+}
+
+label {
+  color: white;
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 500%;
+}
+img + a {
+  width: 80px;
+}
+
+p {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 2rem;
+}
+
+header img {
+  width: 20%;
+}
+
+footer img {
+  width: 5%;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #1B1A55;
+  justify-content: flex-end;
+  justify-content: space-around;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .item img {
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+.padre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fachada {
+  width: 30%;
+}
+
+.mapa {
+  width: 40%;
+}
+
+.dropdown-item {
+  color: black;
+  background-color: white;
+  border-bottom: white;
+}
+
+.dropdown-menu {
+  color: black;
+  background-color: white;
+  font-size: 1.5rem;
+}
+
+.fondo-menu {
+  color: white;
+  background-color: #201658;
+  text-decoration: none;
+  border: none;
+  font-size: 1.8rem;
+}
+.fondo-menu:hover {
+  color: #9290C3;
+}
+
+.padre {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor {
+  max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+  width: 100%;
+}
+
+.mapa, .fachada {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mapa, .fachada {
+    width: calc(50% - 10px); /* Ajusta el ancho de los elementos y deja algo de espacio entre ellos */
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
